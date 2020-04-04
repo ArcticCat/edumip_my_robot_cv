@@ -74,7 +74,7 @@ public:
     grayscaled_image.width = filtered_image.width = msg->width;
     grayscaled_image.height = filtered_image.height = msg->height;
     grayscaled_image.is_bigendian = filtered_image.is_bigendian = false;
-    grayscaled_image.step = filtered_image.step = msg->step ;
+    grayscaled_image.step = filtered_image.step = msg->step / 3;
     grayscaled_image.data.resize(grayscaled_image.width * grayscaled_image.height);
     filtered_image.data.resize(filtered_image.width * filtered_image.height);
 
